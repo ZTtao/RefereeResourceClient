@@ -1,0 +1,95 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pers.zhentao.refereeresourceclient">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--<uses-permission android:name="android.permission.RECEIVE_SMS"/>-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <!-- 监听网络的变化 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 设备休眠 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- sd卡存储-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--摄像头-->
+    <!--<uses-permission android:name="android.permission.CAMERA" />-->
+    <!--录音-->
+    <!--<uses-permission android:name="android.permission.RECORD_AUDIO" />-->
+    <!--通知震动-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--<uses-feature android:name="android.hardware.camera"/>-->
+    <!--<uses-feature android:name="android.hardware.camera.autofocus"/>-->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".util.ContextUtil">
+        <activity
+            android:name=".activity.SplashScreen"
+            android:label="@string/title_activity_start" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainPage"
+            android:label="@string/title_activity_mainpage" />
+        <activity
+            android:name=".activity.LoginAndRegister"
+            android:label="@string/title_activity_login_and_register" >
+        </activity>
+        <activity android:name=".activity.PerfectInfo"
+            android:label="PerfectInfo"/>
+        <activity android:name=".activity.NewPost"
+            android:label="NewPost"/>
+        <activity android:name=".activity.PostDetail"
+            android:label="PostDetail"/>
+        <activity android:name=".activity.MyFriend"
+            android:label="MyFriend"/>
+        <activity android:name=".activity.SearchFriend"
+            android:label="SearchFriend"/>
+        <activity android:name=".activity.SendValidation"
+            android:label="SendValidation"/>
+        <activity android:name=".activity.FriendRequest"
+            android:label="FriendRequest"/>
+        <activity android:name=".activity.Chat"
+            android:label="Chat"/>
+        <activity android:name=".activity.FriendRequestDetail"
+            android:label="FriendRequestDetail"/>
+        <activity android:name=".activity.FriendRequestMsg"
+            android:label="FriendRequestMsg"/>
+        <activity android:name=".activity.RecordVideo"
+            android:label="RecordVideo"/>
+        <activity android:name=".activity.ShowVideo"
+            android:label="ShowVideo"/>
+        <activity android:name=".activity.MyPost"
+            android:label="MyPost"/>
+        <activity android:name=".activity.LikePost"
+            android:label="LikePost"/>
+        <activity android:name=".activity.MyReview"
+            android:label="MyReview"/>
+        <activity android:name=".activity.ShowSelectedPicture"
+            android:label="ShowSelectedPicture"/>
+        <activity android:name=".activity.ShowSendOrReceivePicture"
+            android:label="ShowSendOrReceivePicture"/>
+        <activity android:name=".activity.FindReferee"
+            android:label="FindReferee"/>
+        <activity android:name=".activity.AddFindReferee"
+            android:label="AddFindReferee"/>
+        <activity android:name=".activity.FindRefereeDetail"
+            android:label="FindRefereeDetail"/>
+        <activity android:name=".activity.ShowApply"
+            android:label="ShowApply"/>
+        <activity android:name=".activity.ApplyDetail"
+            android:label="ApplyDetail"/>
+        <activity android:name=".activity.MyApply"
+            android:label="MyApply"/>
+    </application>
+
+</manifest>

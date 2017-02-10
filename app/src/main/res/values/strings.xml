@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">裁判源</string>
+    <string name="title_activity_start">裁判源</string>
+    <string name="title_activity_mainpage">MainPage</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="activity_start_text">裁判源社区</string>
+    <string name="activity_mainpage_text">这是主界面</string>
+    <string name="title_activity_login_and_register">LoginAndRegister</string>
+
+    <string name="hello_world">Hello world!</string>
+</resources>

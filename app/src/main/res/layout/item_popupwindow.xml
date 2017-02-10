@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#22000000">
+    <LinearLayout
+        android:id="@+id/ly_item_popupwindow_top"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/btn_popupwindow_take_photo"
+        android:layout_height="match_parent"></LinearLayout>
+    <Button
+        android:id="@+id/btn_popupwindow_take_photo"
+        android:layout_above="@+id/btn_popupwindow_select_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_popupwindow"
+        android:text="拍照"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/btn_popupwindow_select_photo"
+        android:background="#d0d0d0"/>
+    <Button
+        android:id="@+id/btn_popupwindow_select_photo"
+        android:layout_marginTop="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_popupwindow"
+        android:text="从相册选择"/>
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp" android:background="#f0f0f0">
+    <ImageView
+        android:id="@+id/img_avatar_friend_request_msg"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:background="#d0d0d0"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_avatar_friend_request_msg"
+        android:layout_alignParentRight="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:id="@+id/tv_name_friend_request_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:text="userWho"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/tv_time_friend_request_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:text="2016-7-22 16:09"
+            android:textSize="14sp"
+            android:textColor="#000000" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_content_friend_request_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:text="ContentContentContent"
+        android:textSize="16sp"
+        android:textColor="#303030"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#d0d0d0"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
